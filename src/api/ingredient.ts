@@ -1,7 +1,10 @@
 import axios from "axios";
 import { BASE_URL } from "../environment/environment";
-const url = `${BASE_URL}/lookup.php`;
 
-export const get_by_cocktail_id = async (cocktailId: number) => {
-  return (await axios.get(`${url}?i=${cocktailId}`)).data;
+export const get_by_ingredient_id = async (ingredientId: number) => {
+  return (await axios.get(`${BASE_URL}/lookup.php?ii=${ingredientId}`)).data;
 };
+
+export const get_ingredients_list = async () => {
+    return (await axios.get(`${BASE_URL}/list.php?i=list`)).data;
+  };
