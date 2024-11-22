@@ -6,11 +6,14 @@ import Container from '@mui/material/Container';
 import InputBase from '@mui/material/InputBase';
 import AdbIcon from '@mui/icons-material/Adb';
 import SearchIcon from '@mui/icons-material/Search';
+import CocktailList from './CocktailList';
+import IngredientList from './IngredientList';
 import '../App.css'
 
 export const Home = () => {
 
   return (
+    <>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -38,5 +41,8 @@ export const Home = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    <CocktailList/>
+    <IngredientList/>
+  </>
   );
 };

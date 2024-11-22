@@ -1,4 +1,10 @@
-.App {
+
+body, html, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -94,4 +100,18 @@
   }
 }
 
+.ingredients-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20;
+}
 
+.list-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 8px 16px;
+}
